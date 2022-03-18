@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Flashcard } from './components/Flashcard';
 import './App.scss';
 
 const url = 'http://localhost:5000/flashcards';
@@ -21,7 +22,7 @@ function App() {
 			<ul>
 				{flashcards.map((flashcard) => {
 					return (
-						<li>{flashcard.front}</li>
+						<Flashcard flashcard={flashcard} />
 					)
 				})}
 			</ul>
