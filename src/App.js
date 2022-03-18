@@ -11,13 +11,20 @@ function App() {
 			const response = await fetch(url);
 			const flashcards = await response.json();
 			setFlashcards(flashcards);
-		})();	
+		})();
 	}, []);
 
 	return (
 		<div className="App">
-		<h1>Flashcards</h1>
+			<h1>Flashcards</h1>
 			<div>We have {flashcards.length} flashcards.</div>
+			<ul>
+				{flashcards.map((flashcard) => {
+					return (
+						<li>{flashcard.front}</li>
+					)
+				})}
+			</ul>
 		</div>
 	);
 }
