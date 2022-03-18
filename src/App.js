@@ -19,13 +19,13 @@ function App() {
 		<div className="App">
 			<h1>Flashcards</h1>
 			<div>We have {flashcards.length} flashcards.</div>
-			<ul>
+			<div className="flashcards">
 				{flashcards.map((flashcard) => {
 					return (
 						<Flashcard flashcard={flashcard} />
 					)
 				})}
-			</ul>
+			</div>
 		</div>
 	);
 }

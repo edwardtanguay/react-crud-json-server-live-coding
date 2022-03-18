@@ -1,1 +1,2 @@
-- .. make a component Flashcard and call from App
+- x make a component Flashcard and call from App
+- .. style flashcards
